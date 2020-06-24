@@ -1,27 +1,30 @@
   /*MAIN PAGE*/
+
   .jumbotron {
     background-image: 
-
-    /* radial-gradient(transparent, white),  */
+    /* radial-gradient(transparent, whitesmoke),  */
     url(../assets/photo-1.jpeg);
     background-size: cover;
     height: 100vh;
     text-align: end;
+    /*Parallax effect*/
+    background-attachment: fixed;
+    background-position: center;
+    /* filter: opacity(90%); */
   }
 
-  .fixed{
-    position: fixed;
-    z-index: 1;
-    color: lavender;
-    width: 100%;
+  .display-4 {
+    margin-top: 15px;
+    padding: 10px;
   }
-  /* .name {
-    background-color: white;
-  } */
+  @media only screen and (max-width: 800px) {
+    .name {
+      background-color: whitesmoke;
+    }
+  }
 
 /*ABOUT ME*/
   .aboutMe {
-    
     background-image:
     radial-gradient(transparent, white), 
     url(../assets/photo-2.jpeg);
@@ -30,12 +33,14 @@
     height: 100%;
     padding: 50px; 
     margin-bottom: 50px;
-
   }
 
   .description {
     padding: 10px;
     margin: 10px;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
   }
 
 .valueQuotes {
@@ -53,8 +58,18 @@
   padding: 10px;
 }
 
-/* /*PROJECTS*/
+.resume {
+  padding: 0px;
+}
+.buttonR{
+  background-color: whitesmoke;
+  border-radius: 10px;
+  border-color: lightslategray;
+  padding: 10px;
+}
 
+
+/* /*PROJECTS*/
   .skillsProjects {
     background-image: 
     radial-gradient(transparent, white), 
@@ -83,32 +98,24 @@
   }
 
     .project-item {
-   
     padding: 10px;
     margin: 10px;
   }  
 
-  /* .project-item img {
-    width: 100%;
-    max-width: 400px;
-    margin: 20px;
-    padding: 5px;
-    
-  }  */
-
   .wrap {
     position: relative;
-    max-height: 40vh;
-    width: 70%;
-   
+    /* max-height: 40vh;
+    width: 70%; */
+    max-width: 100%;
+    height: auto; 
   }
   
   .image {
   display: block;
   width: 100%;
-  
-  height: 100%;
-
+  max-width: 100%;
+  height: auto; 
+ /* height: 100%; */
 }
   
   .overlay {
@@ -147,18 +154,12 @@
    margin-top: 30px;
   }
 
-    /* .project-item img:hover {
-    background: green;
-} */
-
-  
   /*CONTACT ME*/
   .contactMe {
     background-image: url(../assets/photo-4.jpeg);
     background-size: cover;
     height: 120vh;
     /* box-shadow:inset 0px 0px 10px 6px rgba(255,255,255,1); */
-  
     padding:10px;
   }
 
@@ -264,7 +265,7 @@
   }
   
  #send {
-  background-color: white;
+  background-color: lightgrey;
    margin: 10px;
   padding: 20px;
   border: 5px solid rgba(0,0,0,0.2);
