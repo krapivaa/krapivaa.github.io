@@ -1,76 +1,165 @@
-  
+  /*MAIN PAGE*/
   .jumbotron {
     background-image: 
-    
-    /* radial-gradient(transparent, white),  */
 
+    /* radial-gradient(transparent, white),  */
     url(../assets/photo-1.jpeg);
     background-size: cover;
     height: 100vh;
     text-align: end;
   }
 
-  /* .window:hover {
-    background: blue;
-} */
-
+/*ABOUT ME*/
   .aboutMe {
-    background-image: url(../assets/photo-2.jpeg);
+    background-image:
+    url(../assets/photo-2.jpeg);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 100%;
+    padding: 50px; 
+    margin-bottom: 50px;
+
   }
 
-#valueQuotes {
-  display: block;
+  .description {
+    padding: 10px;
+    margin: 10px;
+  }
+
+.valueQuotes {
+  padding: 10px;
+  margin: 10px;
+  margin-bottom: 50px;
 }
+
 #dayQuote {
-  color: red;
+  color: orange;
 }
 
-/* #myPhoto {
-  height: 20px;
-  width: 20px;
+.hobby {
+  margin: 10px;
+  padding: 10px;
+}
 
-} */
+/* /*PROJECTS*/
+
   .skillsProjects {
-    background-image: url(../assets/photo-3.jpeg);
+    background-image: 
+    /* radial-gradient(transparent, white),  */
+    url(../assets/photo-3.jpeg);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 100%;
     box-shadow:inset 0px 0px 10px 6px rgba(255,255,255,1);
   }
 
-
-  .skills {
-    background-color: khaki;
+  .sectionProject {
+    text-align: center;
   }
 
+  .project-item .btn {
+    display: inline-block;
+    border-radius: 10px;
+    border-color: black;
+    background: whitesmoke;
+    padding: 10px;
+    color: green;
+  }
+
+  .project-item .btn:hover{
+    background: rgba(255,255,255,1)
+  }
+
+    .project-item {
+   
+    padding: 10px;
+    margin: 10px;
+  }  
+
+  /* .project-item img {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px;
+    padding: 5px;
+    
+  }  */
+
+  .wrap {
+    position: relative;
+    max-height: 40vh;
+    width: 70%;
+   
+  }
+  
+  .image {
+  display: block;
+  width: 100%;
+  
+  height: 100%;
+
+}
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: snow;
+  }
+  
+  .wrap:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .descriptionP {
+   margin: 0px;
+   padding: 0px;
+   align-items: center;
+   margin-top: 30px;
+  }
+
+    /* .project-item img:hover {
+    background: green;
+} */
+
+  
+  /*CONTACT ME*/
   .contactMe {
     background-image: url(../assets/photo-4.jpeg);
     background-size: cover;
     height: 120vh;
-    box-shadow:inset 0px 0px 10px 6px rgba(255,255,255,1);
+    /* box-shadow:inset 0px 0px 10px 6px rgba(255,255,255,1); */
+  
+    padding:10px;
   }
 
+  .contact {
+    margin: 20px;
+  }
+
+   /*FOOTER*/
   footer {
-    align-items: center;
+    float: right;
   }
 
-
-
-  
-
-
-
-
-
-
-
-
-
-  
-  /*SIMPLE FORM STYLE*/
+  /*FORM STYLE*/
   #fs-frm input,
   #fs-frm select,
   #fs-frm textarea,
@@ -85,8 +174,8 @@
     border-radius: 0;
     display: block;
     width: 50%;
-    padding: 0;
-    margin: 0;
+    padding: 5px;
+    margin: 5px;
     align-items: center;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -94,11 +183,11 @@
   #fs-frm label,
   #fs-frm legend,
   #fs-frm ::placeholder {
-    font-size: .825em;
+    font-size: 1.25em;
     margin-bottom: .5em;
     padding-top: .2em;
     display: flex;
-    align-items: baseline;
+    font-weight: 700;
   }
 
   /* border, padding, margin, width*/
@@ -106,7 +195,8 @@
   #fs-frm select,
   #fs-frm textarea,
   #fs-frm #card-element {
-    border: 1px solid rgba(0,0,0,0.2);
+    border: 5px solid rgba(0,0,0,0.2);
+    border-radius: 10px;
     background-color: rgba(255,255,255,0.9);
     padding: .75em 1em;
     margin-bottom: 1.5em;
@@ -117,7 +207,7 @@
     background-color: white;
     outline-style: solid;
     outline-width: thin;
-    outline-color: gray;
+    outline-color: black;
     outline-offset: -1px;
   }
   #fs-frm [type="text"],
@@ -161,4 +251,13 @@
     appearance: radio;
   }
   
- 
+ #send {
+   margin: 10px;
+  padding: 20px;
+  border: 5px solid rgba(0,0,0,0.2);
+  border-radius: 10px;
+  margin-bottom: .5em;
+  display: flex;
+  font-size: 1.5em;
+  /* font-weight: 600; */
+ }
