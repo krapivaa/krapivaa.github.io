@@ -9,9 +9,15 @@
     text-align: end;
   }
 
+  /* .name {
+    background-color: white;
+  } */
+
 /*ABOUT ME*/
   .aboutMe {
+    
     background-image:
+    radial-gradient(transparent, white), 
     url(../assets/photo-2.jpeg);
     background-size: cover;
     background-position: center;
@@ -45,7 +51,7 @@
 
   .skillsProjects {
     background-image: 
-    /* radial-gradient(transparent, white),  */
+    radial-gradient(transparent, white), 
     url(../assets/photo-3.jpeg);
     background-size: cover;
     background-position: center;
@@ -173,7 +179,7 @@
     border: none;
     border-radius: 0;
     display: block;
-    width: 50%;
+    width: 70%;
     padding: 5px;
     margin: 5px;
     align-items: center;
@@ -212,7 +218,7 @@
   }
   #fs-frm [type="text"],
   #fs-frm [type="email"] {
-    width: 50%;
+    width: 70%;
   }
   #fs-frm [type="button"],
   #fs-frm [type="submit"],
@@ -252,6 +258,7 @@
   }
   
  #send {
+  background-color: white;
    margin: 10px;
   padding: 20px;
   border: 5px solid rgba(0,0,0,0.2);
