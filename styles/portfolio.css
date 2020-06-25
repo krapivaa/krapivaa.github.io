@@ -13,6 +13,13 @@
     /* filter: opacity(90%); */
   }
 
+  .header {
+    position: fixed;
+    width: 100%;
+    color: whitesmoke;
+    z-index: 1;
+  }
+
   .display-4 {
     margin-top: 15px;
     padding: 10px;
