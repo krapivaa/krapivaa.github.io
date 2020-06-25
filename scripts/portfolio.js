@@ -33,3 +33,4 @@ text.appendChild(textQu);
 textQu.innerHTML = quote
 
 
+
